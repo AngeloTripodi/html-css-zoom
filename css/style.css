@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+main{
+    background-color: black;
+    height: 100vh;
+}
+
+.layout-info .fa-grip{
+    padding-right: .2rem;
+}
+
+.container{
+    width: 90%;
+}
+
+.layout-info{
+    text-align: end;
+    
+}
+
+div.layout-info button{
+    margin-right: .5rem;
+    margin-top: .5rem;
+    color: white;
+    background-color: grey;
+    border-radius: 5px;
+    padding: .3rem .4rem .3rem .4rem;
+}
+
+.card{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 275px;
+    height: 160px;
+    background-image: url(https://picsum.photos/275/160);
+    position: relative;
+}
+
+.card h5{
+    color: white;
+    background-color: rgba(128, 128, 128, 0.61);
+    padding: .3rem .4rem .3rem .4rem;
+    position: absolute;
+    bottom: 0;
+}
