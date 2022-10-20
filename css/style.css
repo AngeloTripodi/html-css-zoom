@@ -14,13 +14,74 @@ main{
     /* width: 100vw; */
 }
 
+header{
+    background-color: #222222 ;
+    color: white;
+    font-size: 14px;
+    height: 85px;
+  
+}
+
+header i{
+    font-size: 25px;
+    padding-bottom: .5rem;
+}
+
+header ul{
+    display: flex;
+}
+
+header li{
+    list-style-type: none;
+    padding-right: 1.5rem;
+}
+
+
+
+.flex-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+
+.fixed{
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.mic-tools,
+.zoom-tools,
+.end-call{
+    text-align: center;
+
+}
+
+.fa-share-from-square{
+    color: green;
+}
+
+div.end-call{
+    height: 100%;
+    background-color: rgb(67, 67, 67);
+    color: rgb(166, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
 .layout-info .fa-grip{
     padding-right: .2rem;
 }
 
 .container{
     width: 90vw;
-    height: 90vh;
+    height: 85vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,22 +92,25 @@ main{
 .layout-info{
     text-align: end;
     
+    
 }
 
 .photo-section{
     display: flex;
     flex-wrap: wrap;
-
+    align-content:flex-start;
   
 }
 
 div.layout-info button{
+    position: relative;
     margin-right: .5rem;
     margin-top: .5rem;
     color: white;
     background-color: grey;
     border-radius: 5px;
     padding: .3rem .4rem .3rem .4rem;
+    z-index:1;
 }
 
 .card{
