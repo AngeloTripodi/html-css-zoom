@@ -11,6 +11,7 @@ body{
 main{
     background-color: black;
     height: 100vh;
+    /* width: 100vw; */
 }
 
 .layout-info .fa-grip{
@@ -18,12 +19,25 @@ main{
 }
 
 .container{
-    width: 90%;
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 .layout-info{
     text-align: end;
     
+}
+
+.photo-section{
+    display: flex;
+    flex-wrap: wrap;
+
+  
 }
 
 div.layout-info button{
@@ -40,9 +54,13 @@ div.layout-info button{
     background-repeat: no-repeat;
     background-size: cover;
     width: 275px;
+    min-width: 275px;
     height: 160px;
+    min-height: 160px;
     background-image: url(https://picsum.photos/275/160);
     position: relative;
+    margin: .25rem .25rem;
+
 }
 
 .card h5{
