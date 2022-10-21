@@ -6,20 +6,21 @@
 
 body{
     font-family: 'Lato', sans-serif;
+    background-color: black;
+    overflow-y: auto;
 }
 
-.container{
+/* .container{
     width: 90vw;
-    height: 85vh;
+    height: calc(85vh) ;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+} */
 
-}
-
-/* header section */
-header{
+/* start footer section */
+footer{
     background-color: #222222 ;
     color: white;
     font-size: 14px;
@@ -27,16 +28,16 @@ header{
   
 }
 
-header i{
+footer i{
     font-size: 25px;
     padding-bottom: .5rem;
 }
 
-header ul{
+footer ul{
     display: flex;
 }
 
-header li{
+footer li{
     list-style-type: none;
     padding-right: 1.5rem;
 }
@@ -84,14 +85,14 @@ div.end-call{
     padding-right: .2rem;
 }
 
-/* end header section */
+/* end footer section */
 
 /* main section */
 
 main{
     background-color: black;
-    height: 100vh;
-    /* width: 100vw; */
+    height:calc(100vh - 85px);
+    overflow-y: auto;
 }
 
 .layout-info{
@@ -104,6 +105,9 @@ main{
     display: flex;
     flex-wrap: wrap;
     align-content:flex-start;
+    padding: 3rem 2rem 2rem 2rem;
+    align-items: center;
+    justify-content: center;
   
 }
 
@@ -129,6 +133,7 @@ div.layout-info button{
     background-image: url(https://picsum.photos/275/160);
     position: relative;
     margin: .25rem .25rem;
+    overflow-y: auto;
 
 }
 
